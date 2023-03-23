@@ -1,4 +1,4 @@
-package minicache
+package cache_
 
 type ByteView struct {
 	b []byte
@@ -16,4 +16,8 @@ func cloneBytes(b []byte) []byte {
 
 func (v ByteView) String() string {
 	return string(v.b)
+}
+
+func (v ByteView) ByteSlice() []byte {
+	return cloneBytes(v.b)
 }

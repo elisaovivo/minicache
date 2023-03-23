@@ -1,7 +1,7 @@
-package minicache
+package cache_
 
 import (
-	"minicache/lru"
+	"minicache/cache_/lru"
 	"sync"
 )
 

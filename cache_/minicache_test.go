@@ -1,4 +1,4 @@
-package minicache
+package cache_
 
 import (
 	"fmt"
@@ -44,7 +44,7 @@ func TestGet(t *testing.T) {
 			t.Fatal("failed to get value of Tom")
 		}
 		if _, err := gee.Get(k); err != nil || loadCounts[k] > 1 {
-			t.Fatalf("cache %s miss", k)
+			t.Fatalf("cache_ %s miss", k)
 		}
 	}
 

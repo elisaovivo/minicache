@@ -1,4 +1,4 @@
-package minicache
+package cache_
 
 import (
 	"fmt"
@@ -52,7 +52,7 @@ func (g *Group) Get(key string) (ByteView, error) {
 		return ByteView{}, fmt.Errorf("key is required")
 	}
 	if v, ok := g.cache.get(key); ok {
-		log.Println("[cache] hit")
+		log.Println("[cache_] hit")
 		return v, nil
 	}
 	return g.load(key)
