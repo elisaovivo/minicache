@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
-	"minicache/consistenthash"
+	"minicache/cache_/consistenthash"
 	"net/http"
 	"net/url"
 	"strings"
